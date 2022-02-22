@@ -85,6 +85,28 @@ exit
 php artisan migrate --seed
 ```
 
+## View
+
+The table can now be viewed.
+
+### Serve
+
+The artisan serve command will start a basic web service
+
+```shell
+php artisan serve
+```
+
+### Browse
+
+The table can then be viewed by navigating to **/table**
+
+- <http://localhost:8000/table>
+
+The default view will show 10 users, click and drag the reorder bars, once dropped the sort order will automatically 
+update.
+
+<!--
 ### Run tests
 
 To make it easy to run all the PHPUnit tests a composer script has been created in **composer.json**. From the root of
@@ -106,7 +128,6 @@ Example (Tests\Feature\Example)
  ✔ The application returns a successful response
 ```
 
-<!--
 ### Code standard
 
 Easy Coding Standard (ECS) is used to check for style and code standards, [PSR-12](https://www.php-fig.org/psr/psr-12/)
